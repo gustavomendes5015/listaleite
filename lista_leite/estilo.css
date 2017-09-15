@@ -1,0 +1,39 @@
+
+h4, h2 {
+	text-align: center;
+}
+
+h2 {
+	font-size: 18px;
+	margin-bottom: 40px;	
+}
+
+table, .cabecalho { 
+	margin-right:auto; margin-left:auto;
+}
+
+#nome, #assinatura {
+	width: 400px;
+}
+
+#data {
+	width: 150px;
+}
+
+img {
+    width: 100px;
+	height: 150px;
+}
+
+#imprimir {
+	margin-top: 5PX;
+	font-size: 20px;
+	font-weight:bold;
+}
+
+@media print {
+  #imprimir {
+    display: none;
+  }
+  table{ page-break-inside:avoid; }
+}

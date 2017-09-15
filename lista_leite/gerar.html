@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="estilo.css">
+		<script src="jquery.js"></script>
+		<script src="exibir.js"></script>
+	</head>
+	<body>
+		<div class="cabecalho">
+			<h2><img src="logo_leite.png">RELAÇÃO DOS RESPONSÁVEIS QUE POSSUEM A CARTEIRINHA DO PROGRAMA LEITE DAS CRIANÇAS COM INÍCIO EM <span class="data"></span> </h2>
+		</div>
+		<div class="jose">
+			<h4>COL. EST JOSÉ GUIMARAES<h4>
+			<table border="1" cellspacing=0 id="tabelaJose">
+				<tr>
+					<th id="nome">NOME</th>
+					<th id="assinatura">ASSINATURA</th>
+					<th id="data">DATA</th>
+				</tr>	
+			</table>
+		</div>
+		<div class="primo">
+			<h4>COL. EST PRIMO MANFRINATO<h4>
+			<table border="1" cellspacing=0 id="tabelaPrimo">
+				<tr>
+					<th id="nome">NOME</th>
+					<th id="assinatura">ASSINATURA</th>
+					<th id="data">DATA</th>
+				</tr>	
+			</table>
+		</div>
+		<div class="lourenco">
+			<h4>COL. EST SAO LOURENCO<h4>
+			<table border="1" cellspacing=0 id="tabelaLourenco">
+				<tr>
+					<th id="nome">NOME</th>
+					<th id="assinatura">ASSINATURA</th>
+					<th id="data">DATA</th>
+				</tr>	
+			</table>
+			<input type="button" name="imprimir" id="imprimir" value="Imprimir" onclick="window.print();">
+		</div>
+	</body>
+</html>
+<!--
+
+table { page-break-inside:auto }
+    tr    { page-break-inside:avoid; page-break-after:auto }
+    thead { display:table-header-group }
+    tfoot { display:table-footer-group }
+>
+		
