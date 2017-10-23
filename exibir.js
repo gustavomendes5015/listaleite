@@ -17,7 +17,7 @@ window.onload = function(){
 	mes = hoje.getMonth();
 	ano = hoje.getYear();
 	
-	$('.data').html(meses[mes] + ' ' + hoje.getFullYear());
+	$('.data').html(meses[mes+1] + ' ' + hoje.getFullYear());
 	
 	for(i = 0; i<= ((qtdJose.length) -1); ++i) {
 		htmlJose += '<tr><td class="nome" align="left">' + qtdJose[i] + '</td><td></td><td></td></tr>';
